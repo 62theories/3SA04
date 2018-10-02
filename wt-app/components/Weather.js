@@ -11,8 +11,8 @@ export default class Weather extends React.Component
   {     
     return (       
       <View style={styles.container}>         
-        <Text onPress={this.doIt}>
-          Hello World
+        <Text>
+          {this.props.zipCode}
         </Text>         
       </View>    
           );   
