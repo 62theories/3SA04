@@ -7,17 +7,23 @@ import {
   View,
   ImageBackground,
   backgroundColor,
+  Button,
 } from 'react-native';
 import Weather from './Weather';
 export default class WeatherScreen extends React.Component {
  static navigationOptions = ({navigation}) => {
  return {
- headerTitle: (<Text >Weather</Text>),
+ headerTitle: (<Text >Weather</Text>),headerRight: (
+ <Button title="Change zip" onPress={() => navigation.navigate('ZipCode')}
+ />
+ )
  }
  }
- render() {
- return (
- <Weather zipCode="90110"/>
- );
- }
+
+
+render() {
+ const zipCode = this.props.navigation.getParam('zipCode')
+ return (<Weather zipCode={zipCode}/>);
+}
+
  }
