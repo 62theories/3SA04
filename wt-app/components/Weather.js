@@ -48,7 +48,7 @@ componentDidUpdate = (prevProps) => {
  render() {
  return (
  <View style={styles.container}>
-  <ImageBackground source={require('../a.jpg')} style={styles.backdrop}>
+  <ImageBackground source={require('./ba.jpg')} style={styles.backdrop}>
     <View style={{flex: 1, flexDirection: 'column',justifyContent: 'flex-start',alignItems: 'center'}}>
 
       <View style={{paddingTop: 25}}>
