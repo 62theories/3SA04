@@ -55,9 +55,12 @@ componentDidUpdate = (prevProps) => {
        <Text style={{fontSize: 20,textAlign :'center'}}>Zip code is {this.props.zipCode}.</Text>
       </View>
       <Forecast {...this.state.forecast} />
-    
+
     </View>
     <View style={{flex: 1, flexDirection: 'column',justifyContent: 'flex-end',alignItems: 'center'}}>
+    <Text style={{fontSize: 20,textAlign :'center'}}>By Nattawat Songsom</Text>
+      <Text style={{fontSize: 20,textAlign :'center'}}>5935512005</Text>
+
     </View>
   </ImageBackground>
  </View>
